@@ -1,0 +1,25 @@
+{
+  "evals_results": [
+    {
+      "eval_name": "csv-export-small-dataset",
+      "input": {
+        "rows": [
+          {"id":1, "name":"Alice", "note":"simple"},
+          {"id":2, "name":"Bob, Jr.", "note":"contains,comma"},
+          {"id":3, "name":"张三", "note":"包含中文"}
+        ]
+      },
+      "expected_csv": "id,name,note\n1,Alice,simple\n2,\"Bob, Jr.\",\"contains,comma\"\n3,\"张三\",\"包含中文\"\n"
+    },
+    {
+      "eval_name": "csv-export-escaping-quotes-newlines",
+      "input": {
+        "rows": [
+          {"id":1, "text":"line1\nline2"},
+          {"id":2, "text":"He said \"hello\""}
+        ]
+      },
+      "expected_csv": "id,text\n1,\"line1\nline2\"\n2,\"He said \"\"hello\"\"\"\n"
+    }
+  ]
+}
