@@ -1,6 +1,0 @@
-- [ ] Task 1.1: Identify target queries and columns — owner: backend — 2h
-- [ ] Task 2.1: Add GET /api/export/csv endpoint — owner: backend — 1d
-- [ ] Task 2.2: Implement streaming CSV writer with proper escaping — owner: backend — 1d
-- [ ] Task 3.1: Frontend download button & fetch logic — owner: frontend — 4h
-- [ ] Task 4.1: Permission checks & rate limiting — owner: backend — 4h
-- [ ] Task 5.1: Unit & integration tests (streaming, escaping) — owner: backend — 1d
